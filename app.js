@@ -30,8 +30,8 @@ app.use(cors())
 
 
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
+app.use('/', (req, res) => {
+    res.json({messgae:"Hello"})
 })
 
 app.listen(8000, () => {
